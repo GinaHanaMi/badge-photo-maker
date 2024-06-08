@@ -11,7 +11,5 @@ Result:
 
 Thanks to https://stocksnap.io/ for photos to process. These are CC0 license.
 
-I have been using Python 3.11.4, Pillow==10.0.0, rembg==2.0.50, numpy==1.24.3
-
 I am very sorry if I missed someone, or something. This is actually my first repo, first commit, and first introduction to bigger world of programming than previously as a self-taught programmer.
 Opinions, advices, commits are welcome here.
