@@ -7,7 +7,17 @@ Usage:
 Place images into inputImg folder, run the main.py file and wait for images to appear in outputimg folder.
 
 Result:
-
+<p style="display: flex;align-items: center;justify-content: center;">
+  <img alt="example photo-1" src="https://github.com/GinaHanaMi/badge-photo-maker/blob/main/examples/StockSnap_DULMKZVVDC.jpg" width="100" />
+  <img alt="example photo-2" src="https://github.com/GinaHanaMi/badge-photo-maker/blob/main/examples/StockSnap_FIP1AN4O4U.jpg" width="100" />
+  <img alt="example photo-3" src="https://github.com/GinaHanaMi/badge-photo-maker/blob/main/examples/StockSnap_G4YYZSAXAT.jpg" width="100" />
+  <img alt="example photo-4" src="https://github.com/GinaHanaMi/badge-photo-maker/blob/main/examples/StockSnap_H1DONX4WW2.jpg" width="100" />
+  <img alt="example photo-5" src="https://github.com/GinaHanaMi/badge-photo-maker/blob/main/examples/StockSnap_LHZMZE0JL0.jpg" width="100" />
+  <img alt="example photo-6" src="https://github.com/GinaHanaMi/badge-photo-maker/blob/main/examples/StockSnap_NCT0MAJ5LE.jpg" width="100" />
+  <img alt="example photo-7" src="https://github.com/GinaHanaMi/badge-photo-maker/blob/main/examples/StockSnap_OLJZKBI4DD.jpg" width="100" />
+  <img alt="example photo-8" src="https://github.com/GinaHanaMi/badge-photo-maker/blob/main/examples/StockSnap_QLQKAOHIUJ.jpg" width="100" />
+  <img alt="example photo-9" src="https://github.com/GinaHanaMi/badge-photo-maker/blob/main/examples/StockSnap_QOA4RON0B0.jpg" width="100" />
+</p>
 
 Thanks to https://stocksnap.io/ for photos to process. These are CC0 license.
 
