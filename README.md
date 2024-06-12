@@ -1,10 +1,19 @@
-badge-photo-maker is a tool to automate creation of ID / employee badges in bulk without human intervention
+badge-photo-maker is a tool to automate creation of ID / employee badges.
+Export can be made automaticly in bulk or manually seperatly.
 
-It uses rembg library under MIT license with u2net.onnx model to remove background, opencv-python under MIT license to make the photo in greyscale, and for face detection using haarcascade_frontalface_default.xml.
-There is no GUI, usage below.
+There are many options like:
+Monochrome
+Face Detection
+Defining cropped face desired resolution
+Background removal with ability to define number of times it iterates that remove function
+
+It uses rembg library under MIT license with u2net.onnx model to remove background, 
+opencv-python under MIT license to make the photo in greyscale,
+for face detection uses haarcascade_frontalface_default.xml,
+and GUI is made using tkinter
 
 Usage:
-Place images into inputImg folder, run the main.py file and wait for images to appear in outputimg folder.
+In upper left corner there is a menu. Click the option you desire (input images, or all images from folder). Then an image will appearn on the left side. In the right side of the main window are options. Select the ones that suit you and click "Submit" to see preview, or click "Save" to save the images.
 
 Result:
 <p style="display: flex;align-items: center;justify-content: center;">
@@ -19,7 +28,9 @@ Result:
   <img alt="example photo-9" src="https://github.com/GinaHanaMi/badge-photo-maker/blob/main/examples/StockSnap_QOA4RON0B0.jpg" width="100" />
 </p>
 
-Thanks to https://stocksnap.io/ for photos to process. These are CC0 license.
+GUI:
+<p style="display: flex;align-items: center;justify-content: center;">
+  <img alt="example photo-1" src="https://github.com/GinaHanaMi/badge-photo-maker/blob/main/examples/GUI.JPG" width="800" />
+</p>
 
-I am very sorry if I missed someone, or something. This is actually my first repo, first commit, and first introduction to bigger world of programming than previously as a self-taught programmer.
-Opinions, advices, commits are welcome here.
+Thanks to https://stocksnap.io/ for photos to process that are on CC0 license.
