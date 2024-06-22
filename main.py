@@ -105,11 +105,6 @@ class mainWindow:
         self.menu_bar.add_cascade(label="Import", menu=self.import_menu)
         self.import_menu.add_command(label="Import images", command=self.import_images)
         self.import_menu.add_command(label="Import all images from folder", command=self.import_images_from_folder)
-        # self.import_menu.add_command(label="DEBUG", command=self.debug_app)
-    
-    # def debug_app(self):
-    #     print(self.image_files)
-    #     print("---------------------")
 
     def import_images(self):
         image_paths_from_files = askopenfilenames(title="Select images", filetypes=[("All files", "*.*"), ("Image files", "*.png;*.jpg;*.jpeg;*.bmp")])
@@ -165,15 +160,11 @@ class mainWindow:
         self.after_image = self.before_image_base
         
         if self.black_and_white_var.get() == 1:
-            print("Black and white")
             self.after_image = self.after_image.convert("L")
-        print(type(self.after_image))
 
         if int(self.number_time_backround_removal_spinbox.get()) > 0:
-            print("Background removal")
             for x in range(int(self.number_time_backround_removal_spinbox.get())):
                 self.after_image = remove(self.after_image)
-        print(type(self.after_image))
         
         self.save_processed_image = self.after_image
 
@@ -181,12 +172,7 @@ class mainWindow:
             self.face_image_label.pack(side=LEFT)
             
             self.id_photo_size = (int(self.detect_faces_ID_size_width_var.get()), int(self.detect_faces_ID_size_height_var.get()))
-            
 
-            print(type(self.after_image))
-            print("Face detection")
-            
-            
             haarcascade = fr"{self.work_dir}\haarcascade\haarcascade_frontalface_default.xml"
             face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
@@ -194,8 +180,6 @@ class mainWindow:
             
             detected_faces = face_cascade.detectMultiScale(self.after_image, scaleFactor=1.05, minNeighbors=10, minSize=(100, 100))
             if len(detected_faces) > 0:
-                print(f"FACES DETECTED. NUMER OF FACES = {detected_faces}")
-
                 x, y, w, h = detected_faces[0]
                 
                 # Defines the offset of that detection
@@ -285,8 +269,6 @@ class mainWindow:
                     splitted = self.image_files[self.displayed_image_index].split("/")
                     output_file_path = fr"{self.saving_location}\{splitted[-1]}_processed_manual.png"
                     self.save_processed_image.save(output_file_path)
-
-
 
 if __name__ == "__main__":
     root = tk.Tk()
